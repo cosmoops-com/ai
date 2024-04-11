@@ -76,7 +76,7 @@ async function describeImage(imageBase64: string) {
       `
     } else {
       const imageData = imageBase64.split(',')[1]
-      const model = genAI.getGenerativeModel({ model: 'gemini-pro-vision' })
+      const model = genAI.getGenerativeModel({ model: 'gemini-pro' })
       const prompt = 'List the books in this image.'
       const image = {
         inlineData: {
